@@ -1,1 +1,3 @@
-used technology: shadcn/ui , tailwindcss , vite , React-router-dom , react-icons
+frontned technology: shadcn/ui , tailwindcss , vite , React-router-dom , react-icons
+
+backend technology : express , nodemon 

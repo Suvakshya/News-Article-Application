@@ -1,0 +1,1 @@
+used technology: shadcn/ui , tailwindcss , vite

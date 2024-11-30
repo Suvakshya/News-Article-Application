@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import authRoutes from "./routes/auth.route.js";
 
 dotenv.config();
 
@@ -14,8 +15,14 @@ mongoose
     console.log(err);
   });
 
+//-----------------creating server--------------------------//
 const app = express();
+
+app.use(express.json()); // for allowing json object in req body
 
 app.listen(5000, () => {
   console.log("server is running in port 5000");
 });
+
+//-------------------routes-------------------------------//
+app.use("/api/auth", authRoutes);
